@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UGPApplication</string>
+    <string name="select">Select Item</string>
+
+    <string-array name="categoryList">
+        <item>Choose a category…</item>
+        <item>PNG</item>
+        <item>JPG</item>
+        <item>JPEG</item>
+        <item>HEIC</item>
+    </string-array>
+</resources>

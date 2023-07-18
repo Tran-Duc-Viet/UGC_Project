@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/uploadContentDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/headingOfUploadContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="コンテンツ投稿"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/anhTextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:text="画像*"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/uploadImage1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/uploadImage2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/uploadImage3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/categoryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="カテゴリ*"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:paddingLeft="15dp"/>
+   <Spinner
+       android:id="@+id/category"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_marginLeft="15dp"
+       android:layout_width="380dp"
+       android:layout_height="48dp"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="メモ*"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/memo"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:maxWidth="360dp"
+        android:background="@drawable/text_view_border"
+        android:gravity="top|left"
+        android:paddingLeft="5sp"
+        android:paddingTop="5sp"
+        android:paddingRight="5sp"
+        android:paddingBottom="5sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btnBackToMapscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="キャンセル"
+            android:background="@drawable/btn_round_conner"
+            android:layout_marginRight="30dp"/>
+        <Button
+            android:id="@+id/btnUploading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="投稿する"
+            android:background="@drawable/btn_round_conner"
+            android:layout_marginLeft="30dp"/>
+
+    </LinearLayout>
+</LinearLayout>
